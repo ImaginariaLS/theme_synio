@@ -20,4 +20,6 @@ return array(
 	
 	'profile_about_empty' => 'Empty...',
 	'profile_about_edit' => 'Edit',
+
+    'dropdown_menu_publications' => 'Topics'
 );
