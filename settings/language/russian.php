@@ -22,5 +22,7 @@ return array(
 	'profile_about_empty' => 'Пока ничего не известно...',
 	'profile_about_edit' => 'Редактировать',
 
-    'dropdown_menu_publications' => 'Публикации'
+    'dropdown_menu_publications' => 'Публикации',
+
+    'topic_title'   => 'Дискуссии'
 );

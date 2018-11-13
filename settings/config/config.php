@@ -3,7 +3,7 @@
 $config = array();
 
 // Максимальная вложенность комментов при отображении
-$config['module']['comment']['max_tree'] = 5;
+$config['module']['comment']['max_tree'] = 12;
 
 // Ограничение на вывод числа друзей пользователя на странице его профиля
 $config['module']['user']['friend_on_profile']    = 18;

@@ -9,6 +9,8 @@
 		<li {if $sMenuHeadItemSelect=='people'}class="active"{/if}><a href="{router page='people'}">{$aLang.people}</a> <i></i></li>
 		<li {if $sMenuHeadItemSelect=='stream'}class="active"{/if}><a href="{router page='stream'}">{$aLang.stream_menu}</a> <i></i></li>
 
+        <li><a href="http://rpglinks.wintersky.me/" target="_blank">Ссылки</a> <i></i></li>
+
 		{hook run='main_menu_item'}
 
 		<li class="nav-main-more"><a href="#" id="dropdown-mainmenu-trigger" onclick="return false">{$aLang.more}</a></li>
