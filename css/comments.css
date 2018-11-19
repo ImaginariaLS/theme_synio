@@ -62,25 +62,9 @@
 .comment.comment-bad 		.comment-content		{ border: 1px solid #FFBBBB;}
 .comment.comment-bad 		.comment-content .text{opacity: 0; filter: alpha(opacity=0);}
 
-/*
-Выделение особым стилем комментариев администратора и топикстартера
- */
-
-.comment.comment-admin		.comment-content {
-	border-color: indianred !important; /* вариант: mediumvioletred */
-}
-
-.comment.comment-topicstarter	.comment-content {
-	border-color: #0e90d2;
-}
-
-
-/* original css: */
-/*
+/* комменты с минусами: */
 .comment.comment-bad 		.comment-content		{ opacity: 0.3; filter: alpha(opacity=30); }
 .comment.comment-bad:hover 	.comment-content		{ opacity: 1; filter: alpha(opacity=100); }
-
- */
 
 .ls-user-role-not-admin .comment.comment-deleted 	{ padding: 10px 15px; min-height: 0; background: #f7f7f7; color: #888; }
 
@@ -96,14 +80,6 @@
 .comment .comment-info li.comment-author.comment-topic-author a { color: #4b5468; }
 .comment .comment-info li.comment-author.comment-topic-author {
 	/* убираем гнусный желтый градиент для комментирующего топикстартера */
-/*	background: rgb(254,255,163);
-	background: -moz-linear-gradient(left,  rgba(254,255,163,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(254,255,163,1)), color-stop(100%,rgba(255,255,255,1)));
-	background: -webkit-linear-gradient(left,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-	background: -o-linear-gradient(left,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-	background: -ms-linear-gradient(left,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-	background: linear-gradient(to right,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-*/
 	padding-left: 7px;
 }
 .comment .comment-info li.comment-date { color: #818189; }

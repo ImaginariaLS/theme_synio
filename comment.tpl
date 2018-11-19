@@ -3,11 +3,11 @@
 
 
 <section id="comment_id_{$oComment->getId()}" class="comment
-														{if $oComment->isBad()}comment-bad{/if}
+														{if $oComment->isBad()} comment-bad {/if}
 
-														{if $oUser->isAdministrator()}comment-admin{/if}
+														{if $oUser->isAdministrator()} comment-admin {/if}
 
-														{if $oTopic and $oComment->getUserId() == $oTopic->getUserId()}comment-topicstarter{/if}
+														{if $oTopic and $oComment->getUserId() == $oTopic->getUserId()} comment-topicstarter {/if}
 
 														{if $oComment->getDelete()}
 															comment-deleted
