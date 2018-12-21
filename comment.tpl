@@ -33,7 +33,7 @@
 		
 		<ul class="comment-info">
 			<li class="comment-author {if $iAuthorId == $oUser->getId()}comment-topic-author{/if}" title="{if $iAuthorId == $oUser->getId() and $sAuthorNotice}{$sAuthorNotice}{/if}">
-				<a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a>
+				<a href="{$oUser->getUserWebPath()}">{$oUser->getProfileName()}</a>
 			</li>
 			<li class="comment-date">
 				<time datetime="{date_format date=$oComment->getDate() format='c'}" title="{date_format date=$oComment->getDate() format="j F Y, H:i"}">
