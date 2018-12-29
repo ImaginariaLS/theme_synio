@@ -1,6 +1,9 @@
+<h2>{cfg name='view.name'}</h2>
+<h4>{cfg name='view.description'}</h4>
+<hr>
+
 Пользователь «<a href="{$oUserFrom->getUserWebPath()}">{$oUserFrom->getProfileName()}</a>»</b> хочет добавить вас в друзья.						
 <br /><br />
-<i>{$sText}</i>
+<em>{$sText}</em>
 <a href='{$sPath}'>Посмотреть заявку</a> (Не забудьте предварительно авторизоваться!)
 <br />
-С уважением, администрация сайта <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>

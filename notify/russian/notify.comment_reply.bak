@@ -1,9 +1,0 @@
-Пользователь <a href="{$oUserComment->getUserWebPath()}">{$oUserComment->getProfileName()}</a> ответил на ваш комментарий в дискуссии <strong>«{$oTopic->getTitle()|escape:'html'}»</strong>. 
-Прочитать его комментрий можно, перейдя по <a href="{if $oConfig->GetValue('module.comment.nested_per_page')}{router page='comments'}{else}{$oTopic->getUrl()}#comment{/if}{$oComment->getId()}">этой ссылке</a><br>.
-
-{if $oConfig->GetValue('sys.mail.include_comment')}
-	Текст комментария: <em>{$oComment->getText()}</em>	
-{/if}				
-<br /><br />
-С уважением, почтовый робот сайта <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>.
-

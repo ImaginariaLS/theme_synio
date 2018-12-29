@@ -1,7 +1,13 @@
-Пользователь <a href="{$oUserFrom->getUserWebPath()}">{$oUserFrom->getProfileName()}</a> оставил новый комментарий к письму <b>«{$oTalk->getTitle()|escape:'html'}»</b>, прочитать его можно перейдя по <a href="{router page='talk'}read/{$oTalk->getId()}/#comment{$oTalkComment->getId()}">этой ссылке</a><br>
+<h2>{cfg name='view.name'}</h2>
+<h4>{cfg name='view.description'}</h4>
+<hr>
+
+Пользователь <a href="{$oUserFrom->getUserWebPath()}">{$oUserFrom->getProfileName()}</a> оставил новый комментарий 
+к письму <strong>«{$oTalk->getTitle()|escape:'html'}»</strong>, прочитать его можно перейдя по <a href="{router page='talk'}read/{$oTalk->getId()}/#comment{$oTalkComment->getId()}">этой ссылке</a><br>
+
 {if $oConfig->GetValue('sys.mail.include_talk')}
-	Текст сообщения: <i>{$oTalkComment->getText()}</i>	<br>			
+	<p style="margin: 1em 40px;">
+		<em>{$oTalkComment->getText()}</em>
+	</p>
 {/if}
-Не забудьте предварительно авторизоваться!							
-<br><br>
-С уважением, администрация сайта <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>
+Не забудьте авторизоваться на сайте!

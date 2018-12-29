@@ -11,7 +11,8 @@
 </p>
 {/if}
 <br>
-<a href="{$oTopic->getUrl()}#comment{$oComment->getId()}">Ответить на комментарий</a><br>.
+<a href="{$oTopic->getUrl()}#comment{$oComment->getId()}">Ответить на комментарий</a>.
+<br>
 
 {if $sSubscribeKey}
 	<br><br>

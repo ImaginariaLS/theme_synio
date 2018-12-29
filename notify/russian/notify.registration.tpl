@@ -1,6 +1,9 @@
-Вы зарегистрировались на сайте <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a><br>
-Ваши регистрационные данные:<br>
-&nbsp;&nbsp;&nbsp;логин: <b>{$oUser->getLogin()}</b><br>
-&nbsp;&nbsp;&nbsp;пароль: <b>{$sPassword}</b><br>						
-<br><br>
-С уважением, администрация сайта <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>
+<h2>{cfg name='view.name'}</h2>
+<h4>{cfg name='view.description'}</h4>
+<hr>
+
+Вы зарегистрировались на сайте <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>. <br>
+
+Ваш логин: <strong>{$oUser->getLogin()}</strong><br> 
+
+Не забудьте активировать аккаунт. <br>
