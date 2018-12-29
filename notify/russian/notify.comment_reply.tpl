@@ -1,6 +1,15 @@
-Пользователь <a href="{$oUserComment->getUserWebPath()}">{$oUserComment->getProfileName()}</a> ответил на ваш комментарий в топике <b>«{$oTopic->getTitle()|escape:'html'}»</b>, прочитать его можно перейдя по <a href="{if $oConfig->GetValue('module.comment.nested_per_page')}{router page='comments'}{else}{$oTopic->getUrl()}#comment{/if}{$oComment->getId()}">этой ссылке</a><br>
+<h2>{cfg name='view.name'}</h2>
+<h4>{cfg name='view.description'}</h4>
+<hr>
+
+Пользователь <a href="{$oUserComment->getUserWebPath()}">{$oUserComment->getProfileName()}</a> ответил на ваш комментарий
+к дискуссии <strong><a href="{$oTopic->getUrl()}">«{$oTopic->getTitle()|escape:'html'}»</a></strong>.
+<br/>
+
 {if $oConfig->GetValue('sys.mail.include_comment')}
-	Текст сообщения: <i>{$oComment->getText()}</i>	
-{/if}				
-<br><br>
-С уважением, администрация сайта <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>
+	<p style="margin: 1em 40px;">
+		<em>{$oComment->getText()}</em>
+	</p>
+{/if}
+
+<a href="{$oTopic->getUrl()}#comment{$oComment->getId()}">ответить на комментарий</a><br>.
