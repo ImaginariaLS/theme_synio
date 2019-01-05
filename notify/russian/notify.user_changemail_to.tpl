@@ -1,10 +1,10 @@
 <h2>{cfg name='view.name'}</h2>
 <h4>{cfg name='view.description'}</h4>
 <hr>
-
-Вы отправили запрос на смену емайл адреса пользователя <a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a> на сайте <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>.<br/>
-Старый емайл: <strong>{$oChangemail->getMailFrom()}</strong><br/>
-Новый емайл: <strong>{$oChangemail->getMailTo()}</strong><br/>
+<br/>
+Вы отправили запрос на смену E-Mail адреса пользователя <a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a> на сайте <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>.<br/>
+Старый E-Mail: <strong>{$oChangemail->getMailFrom()}</strong><br/>
+Новый E-Mail: <strong>{$oChangemail->getMailTo()}</strong><br/>
 
 
 <br/>

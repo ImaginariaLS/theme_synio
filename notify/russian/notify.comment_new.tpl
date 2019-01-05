@@ -1,7 +1,7 @@
 <h2>{cfg name='view.name'}</h2>
 <h4>{cfg name='view.description'}</h4>
 <hr>
-
+<br>
 Пользователь <a href="{$oUserComment->getUserWebPath()}">{$oUserComment->getProfileName()}</a> оставил комментарий 
 к дискуссии <strong><a href="{$oTopic->getUrl()}">«{$oTopic->getTitle()|escape:'html'}»</a></strong>.
 
