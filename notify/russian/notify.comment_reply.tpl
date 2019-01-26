@@ -12,4 +12,4 @@
 	</p>
 {/if}
 
-<a href="{$oTopic->getUrl()}#comment{$oComment->getId()}">ответить на комментарий</a><br>.
+<a href="{$oTopic->getUrl()}#comment{$oComment->getId()}">ответить на комментарий</a>.
