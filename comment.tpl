@@ -63,7 +63,8 @@
 																				voted-down
 																			{/if}
 																		{/if}">
-					<span class="vote-count" id="vote_total_comment_{$oComment->getId()}">{if $oComment->getRating() > 0}+{/if}{$oComment->getRating()}</span>
+					{* вставляем ссылку на смотрелку плюсов-минусов, но это нужно делать плагином *}
+					<span class="vote-count" id="vote_total_comment_{$oComment->getId()}"><a target="_blank" href="/vote_view.php?comment_id={$oComment->getId()}">{if $oComment->getRating() > 0}+{/if}{$oComment->getRating()}</a></span>
 					<div class="vote-down" onclick="return ls.vote.vote({$oComment->getId()},this,-1,'comment');"></div>
 					<div class="vote-up" onclick="return ls.vote.vote({$oComment->getId()},this,1,'comment');"></div>
 				</li>
